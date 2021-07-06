@@ -9,6 +9,13 @@ on:
     branches:
       - main
   workflow_dispatch:
+env:
+  STARTUP_COMMAND: 'application.py'
+  POSTGRES_DB: ${{ secrets.POSTGRES_DB }}
+  POSTGRES_PW: ${{ secrets.POSTGRES_PW }}
+  POSTGRES_URL: ${{ secrets.POSTGRES_URL }}
+  SENDGRID_API_KEY: ${{ SENDGRID_API_KEY }}
+  SERVICE_BUS_CONNECTION_STRING: ${{ SERVICE_BUS_CONNECTION_STRING }}
 
 jobs:
   build:
