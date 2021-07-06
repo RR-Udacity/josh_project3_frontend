@@ -5,7 +5,7 @@ app_dir = os.path.abspath(os.path.dirname(__file__))
 class BaseConfig:
     DEBUG = True
     POSTGRES_URL=os.environ["POSTGRES_URL"]  #TODO: Update value
-    POSTGRES_USER="psql_admin" #TODO: Update value
+    POSTGRES_USER="psql_admin@project3-db" #TODO: Update value
     POSTGRES_PW=os.environ["POSTGRES_PW"]   #TODO: Update value
     POSTGRES_DB=os.environ["POSTGRES_DB"]   #TODO: Update value
     DB_URL = 'postgresql://{user}:{pw}@{url}/{db}'.format(user=POSTGRES_USER,pw=POSTGRES_PW,url=POSTGRES_URL,db=POSTGRES_DB)
