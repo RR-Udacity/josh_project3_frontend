@@ -9,7 +9,7 @@ dependencies = [
     "adal==1.2.3",
     "astroid==2.4.1",
     "azure-common==1.1.25",
-    "azure-servicebus==0.50.2",
+    "azure-servicebus",
     "certifi==2020.4.5.1",
     "cffi==1.14.0",
     "chardet==3.0.4",
@@ -26,7 +26,7 @@ dependencies = [
     "lazy-object-proxy==1.4.3",
     "MarkupSafe==1.1.1",
     "mccabe==0.6.1",
-    "msrest==0.6.13",
+    "msrest",
     "msrestazure==0.6.3",
     "oauthlib==3.1.0",
     "psycopg2==2.8.5",
@@ -45,6 +45,8 @@ dependencies = [
     "urllib3==1.25.9",
     "Werkzeug==1.0.1",
     "wrapt==1.12.1",
+    "psycopg2-binary~=2.9",
+    "icecream~=2.1",
 ]
 requires-python = ">=3.9"
 dynamic = ["classifiers"]
