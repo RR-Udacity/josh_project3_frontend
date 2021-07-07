@@ -16,6 +16,7 @@ from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 import logging
 from icecream import ic
+import os
 
 
 @app.route("/")
