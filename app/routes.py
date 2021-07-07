@@ -115,7 +115,8 @@ def notification():
             #################################################
             ic()
             return redirect("/Notifications")
-        except:
+        except Exception as e:
+            ic(e)
             logging.error("log unable to save notification")
             return "error"
 
