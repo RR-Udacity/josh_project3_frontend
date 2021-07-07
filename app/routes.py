@@ -117,6 +117,7 @@ def notification():
             return redirect("/Notifications")
         except:
             logging.error("log unable to save notification")
+            return "error"
 
     else:
         return render_template("notification.html")
