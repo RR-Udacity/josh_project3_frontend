@@ -139,7 +139,7 @@ def send_email(email, subject, body):
 
 def send_single_message(sender, notification_id):
     # create a Service Bus message
-    message = ServiceBusMessage(notification_id)
+    message = ServiceBusMessage(str(notification_id))
     ic(message)
     # send the message to the queue
     sender.send_messages(message)
